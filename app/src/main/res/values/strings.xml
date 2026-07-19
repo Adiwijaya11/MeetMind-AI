@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">MeetMind AI</string>
+
+    <!-- Dashboard Fragment -->
+    <string name="rapat_mendatang">Rapat Mendatang</string>
+    <string name="hari_ini">Hari Ini, 10:30 • Ruang Rapat A</string>
+    <string name="mulai_dalam_15_menit">Mulai dalam 15 menit</string>
+    <string name="lihat_detail">Lihat Detail</string>
+    <string name="ringkasan_statistik">Ringkasan Statistik</string>
+    <string name="rapat">Rapat</string>
+    <string name="tugas">Tugas</string>
+    <string name="selesai">Selesai</string>
+    <string name="tertunda">Tertunda</string>
+    <string name="pengingat_harian">Pengingat Harian</string>
+    <string name="aksi_cepat">Aksi Cepat</string>
+    <string name="rapat_baru">+ Rapat Baru</string>
+    <string name="unggah_catatan">Unggah Catatan</string>
+    <string name="buat_ringkasan_ai">Buat Ringkasan AI</string>
+    <string name="ekspor_laporan">Ekspor Laporan</string>
+    <string name="pengingat_laporan">⚠️ Jangan lupa kirim laporan mingguan sebelum jam 5 sore!</string>
+    <string name="project_kickoff">Project Kickoff</string>
+
+    <!-- Profile Fragment -->
+    <string name="edit_profile">Edit Profil</string>
+    <string name="profile">Profil</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="email">Email</string>
+    <string name="no_telepon">No. Telepon</string>
+    <string name="bio">Bio</string>
+    <string name="simpan">Simpan</string>
+    <string name="ganti_foto">Ganti Foto</string>
+    <string name="notifications">Notifikasi</string>
+    <string name="notif_rapat">Notifikasi Rapat</string>
+    <string name="notif_rapat_sub">Terima info jadwal rapat terbaru</string>
+    <string name="notif_pengingat">Pengingat Tugas</string>
+    <string name="notif_pengingat_sub">Dapatkan pengingat deadline tugas</string>
+    <string name="notif_umum">Notifikasi Umum</string>
+    <string name="notif_umum_sub">Pembaruan fitur dan promo</string>
+    <string name="logout">Logout</string>
+    <string name="foto_profil">Foto Profil</string>
+    <string name="nama_default">Adi Pratama</string>
+    <string name="email_default">adi@example.com</string>
+    <string name="phone_default">081234567890</string>
+    <string name="bio_default">Product Manager &amp; AI Enthusiast</string>
+
+    <!-- Tasks Fragment -->
+    <string name="tasks_title">Tasks</string>
+    <string name="cari_tugas">Cari tugas...</string>
+    <string name="filter">Filter</string>
+    <string name="urutkan">Urutkan</string>
+    <string name="total_tugas">Total Tugas</string>
+    <string name="belum_dikerjakan">Belum Dikerjakan</string>
+    <string name="sedang_dikerjakan">Sedang Dikerjakan</string>
+    <string name="semua">Semua</string>
+    <string name="to_do">To Do</string>
+    <string name="in_progress">In Progress</string>
+    <string name="completed">Completed</string>
+    <string name="high_priority">High Priority</string>
+    <string name="overdue">Overdue</string>
+    <string name="belum_ada_tugas">Belum ada tugas</string>
+    <string name="tugas_empty_desc">Tugas akan otomatis dibuat dari hasil meeting yang diproses oleh AI atau dapat ditambahkan secara manual.</string>
+    <string name="tambah_tugas">+ Tambah Tugas</string>
+</resources>

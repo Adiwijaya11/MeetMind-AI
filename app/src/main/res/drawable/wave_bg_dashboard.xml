@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1080dp"
+    android:height="300dp"
+    android:viewportWidth="1080"
+    android:viewportHeight="300">
+    <!-- Distinct, smoother, higher wave for Dashboard using Orange theme -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M0,0 L1080,0 L1080,180 C850,230 700,160 540,190 C380,220 200,170 0,210 Z" />
+</vector>

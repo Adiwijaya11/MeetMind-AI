@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1080dp"
+    android:height="300dp"
+    android:viewportWidth="1080"
+    android:viewportHeight="300">
+    <!-- Modern curve: softer, deeper wave -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M0,0 L1080,0 L1080,220 C800,300 600,200 400,250 C200,300 100,200 0,250 Z" />
+</vector>

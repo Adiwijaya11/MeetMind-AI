@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 0. Rapat Mendatang -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:background="@drawable/accent_bar"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rapat Mendatang"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:fontFamily="@font/poppins_regular" />
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="24dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_gradient_orange"
+                android:padding="20dp">
+                <ImageView
+                    android:id="@+id/ivMeetingBg"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="-20dp"
+                    android:alpha="0.2"
+                    android:src="@drawable/ic_calendar"
+                    app:tint="@android:color/white"
+                    android:contentDescription="Calendar Icon" />
+                <LinearLayout
+                    android:id="@+id/llNextMeeting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView android:id="@+id/tvMeetingTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Memuat..." android:textSize="20sp" android:textStyle="bold" android:textColor="#FFFFFF" android:fontFamily="@font/poppins_regular"/>
+                    <TextView android:id="@+id/tvMeetingTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Silakan tunggu" android:textColor="#FBE9E7" android:layout_marginTop="4dp" android:fontFamily="@font/poppins_regular"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- 1. Ringkasan Statistik -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+            <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" app:cardCornerRadius="16dp" android:layout_margin="8dp" app:cardBackgroundColor="#FFF3E0" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:gravity="center">
+                    <TextView android:id="@+id/tvCountRapat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="22sp" android:textStyle="bold" android:textColor="#FF9800" android:fontFamily="@font/poppins_regular"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rapat" android:textColor="#5D4037" android:textSize="12sp" android:fontFamily="@font/poppins_regular"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" app:cardCornerRadius="16dp" android:layout_margin="8dp" app:cardBackgroundColor="#E8F5E9" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:gravity="center">
+                    <TextView android:id="@+id/tvCountTugas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="22sp" android:textStyle="bold" android:textColor="#2E7D32" android:fontFamily="@font/poppins_regular"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tugas" android:textColor="#1B5E20" android:textSize="12sp" android:fontFamily="@font/poppins_regular"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </GridLayout>
+
+        <!-- 2. Pengingat Harian (Dinamis) -->
+        <LinearLayout
+            android:id="@+id/llPengingatContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/accent_bar"
+                    android:layout_marginEnd="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengingat Harian"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:fontFamily="@font/poppins_regular" />
+            </LinearLayout>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#FFF3E0"
+                app:strokeColor="#FF9800"
+                app:strokeWidth="1dp"
+                android:layout_marginBottom="24dp">
+                <TextView android:id="@+id/tvPengingatText" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:textColor="#5D4037" android:fontFamily="@font/poppins_regular"/>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <!-- 3. Aksi Cepat -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/accent_bar" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Aksi Cepat"
+                android:textColor="#212121"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+            <com.google.android.material.card.MaterialCardView android:id="@+id/btnRapatBaru" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" app:cardCornerRadius="16dp" android:layout_margin="8dp" app:cardBackgroundColor="#FFFFFF" app:strokeColor="#FFE0B2" app:strokeWidth="1dp" app:cardElevation="2dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rapat Baru" android:padding="16dp" android:gravity="center" android:textStyle="bold" android:textColor="#FF9800" android:fontFamily="@font/poppins_regular"/>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" app:cardCornerRadius="16dp" android:layout_margin="8dp" app:cardBackgroundColor="#FFFFFF" app:strokeColor="#FFE0B2" app:strokeWidth="1dp" app:cardElevation="2dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Unggah Catatan" android:padding="16dp" android:gravity="center" android:textStyle="bold" android:textColor="#FF9800" android:fontFamily="@font/poppins_regular"/>
+            </com.google.android.material.card.MaterialCardView>
+        </GridLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

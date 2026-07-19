@@ -1,0 +1,44 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+*.jar
+
+# Build and target files
+/build
+/app/build
+.gradle
+.idea
+*.iml
+*.iws
+.DS_Store
+
+# Local configuration files (CRITICAL)
+local.properties
+
+# Firebase & API secrets (CRITICAL)
+google-services.json
+**/google-services.json
+secrets.properties
+**/secrets.properties
+*.key
+*.keystore
+*.jks
+
+# Native build files
+.externalNativeBuild
+.cxx
+
+# Captures
+/captures
+
+# Log files
+*.log
+
+# Misc
+*.swp
+*.swo
+.thumbdata*
+Thumbs.db

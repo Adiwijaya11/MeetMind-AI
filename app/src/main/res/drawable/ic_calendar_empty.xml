@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Calendar body -->
+    <path android:fillColor="#E0E0E0"
+        android:pathData="M95,25h-5v-5h-10v5H40v-5H30v5h-5c-5.5,0 -10,4.5 -10,10v60c0,5.5 4.5,10 10,10h70c5.5,0 10,-4.5 10,-10V35c0,-5.5 -4.5,-10 -10,-10zM95,95H25V55h70v40zM95,45H25V35h70v10z" />
+    <!-- Plus icon -->
+    <path android:fillColor="#BDBDBD"
+        android:pathData="M60,65h-10v10h10v10h10V75h10V65h-10V55H60v10z" />
+</vector>
